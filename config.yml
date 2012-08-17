@@ -1,0 +1,17 @@
+#################################################
+#             JOPHCraft Config                  #
+#################################################
+enable:
+  mobspawner: true
+  mossybrick: true
+  swordcrafting: true
+  helmetcrafting: true
+  netherwarts: true
+  mossycobble: true
+  ghasttear: true
+  slimeball: true
+  sponge: true
+  blazerod: true
+  web: true
+  grass: true
+  ice: true

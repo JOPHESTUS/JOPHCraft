@@ -1,0 +1,9 @@
+name: JOPHCraft
+main: me.jophestus.JOPHCraft.JOPHCraft
+version: 1.3
+description: Custom recepie plugin for Black Minor!
+commands:
+    JOPHCraft:
+        description: Lists JOPHCraft version
+    jchelp:
+        description: Displayes JOPHCraft Help
