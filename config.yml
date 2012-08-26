@@ -15,3 +15,4 @@ enable:
   web: true
   grass: true
   ice: true
+  chainmail: true

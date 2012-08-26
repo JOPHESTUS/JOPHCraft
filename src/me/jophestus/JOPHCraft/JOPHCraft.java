@@ -116,6 +116,34 @@ public class JOPHCraft extends JavaPlugin {
         mossystone.setIngredient('A', Material.VINE);
         getServer().addRecipe(mossystone);
 		}
+		if (getConfig().getBoolean("enable.chainmail", true)){
+	        ShapedRecipe chainboots = new ShapedRecipe(new ItemStack(Material.CHAINMAIL_BOOTS, 1));
+	        chainboots.shape(new String[] { "A A", "B B"});
+	        chainboots.setIngredient('A', Material.STRING);
+	        chainboots.setIngredient('B', Material.IRON_INGOT);
+	        getServer().addRecipe(chainboots);
+			}
+		if (getConfig().getBoolean("enable.chainmail", true)){
+	        ShapedRecipe chainchest = new ShapedRecipe(new ItemStack(Material.CHAINMAIL_CHESTPLATE, 1));
+	        chainchest.shape(new String[] { "A A", "BAB", "ABA" });
+	        chainchest.setIngredient('A', Material.STRING);
+	        chainchest.setIngredient('B', Material.IRON_INGOT);
+	        getServer().addRecipe(chainchest);
+			}
+		if (getConfig().getBoolean("enable.chainmail", true)){
+	        ShapedRecipe chainpants = new ShapedRecipe(new ItemStack(Material.CHAINMAIL_LEGGINGS, 1));
+	        chainpants.shape(new String[] { "AAA", "B B", "B B" });
+	        chainpants.setIngredient('A', Material.STRING);
+	        chainpants.setIngredient('B', Material.IRON_INGOT);
+	        getServer().addRecipe(chainpants);
+			}
+		if (getConfig().getBoolean("enable.chainmail", true)){
+	        ShapedRecipe chainhat = new ShapedRecipe(new ItemStack(Material.CHAINMAIL_HELMET, 1));
+	        chainhat.shape(new String[] { "AAA", "B B",});
+	        chainhat.setIngredient('A', Material.STRING);
+	        chainhat.setIngredient('B', Material.IRON_INGOT);
+	        getServer().addRecipe(chainhat);
+			}
         
 	}
 
@@ -135,7 +163,7 @@ public class JOPHCraft extends JavaPlugin {
 					+ "+------------------------------+");
 			sender.sendMessage(ChatColor.DARK_AQUA + "JOPHCraft: Custom recipes plugin.");
 			sender.sendMessage(ChatColor.GREEN + "By JOPHESTUS");
-			sender.sendMessage(ChatColor.YELLOW + "Version:" + " 2.0" );
+			sender.sendMessage(ChatColor.YELLOW + "Version:" + " 2.1" );
 			sender.sendMessage(ChatColor.DARK_GREEN
 					+ "+------------------------------+");
 		}
